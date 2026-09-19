@@ -1,0 +1,19 @@
+## 🔌 Circuit Wiring & Connections
+
+### 1. ESP32 & Gas Sensors (IoT Monitoring)
+* **MQ-2 (Smoke):** Analog Pin connected to ESP32 **GPIO 32**[cite: 5]
+* **MQ-3 (Alcohol):** Analog Pin connected to ESP32 **GPIO 33**[cite: 5]
+* **MQ-4 (Methane):** Analog Pin connected to ESP32 **GPIO 34**[cite: 5]
+* **MQ-7 (CO):** Analog Pin connected to ESP32 **GPIO 35**[cite: 5]
+* **MQ-8 (Hydrogen):** Analog Pin connected to ESP32 **GPIO 36**[cite: 5]
+* **MQ-9 (Combustible):** Analog Pin connected to ESP32 **GPIO 39**[cite: 5]
+* **Warning LED:** Positive leg connected to ESP32 **GPIO 22** (GND to GND)
+
+### 2. Arduino Uno & RC Car Control
+* **HC-05 Bluetooth Module:**
+  * TX Pin -> Arduino **Pin 9** (SoftwareSerial RX)
+  * RX Pin -> Arduino **Pin 10** (SoftwareSerial TX)
+  * VCC -> 5V
+  * GND -> GND
+* **L293D Motor Shield:** Placed directly on top of the Arduino Uno[cite: 5].
+* **BO Motors (x4):** Connected to the M1, M2, M3, and M4 screw terminals on the L293D Shield[cite: 5].
